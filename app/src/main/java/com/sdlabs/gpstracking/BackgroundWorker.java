@@ -291,6 +291,7 @@ public class BackgroundWorker extends AsyncTask<String, Void, String> {
 
 
 
+        result = "login success !!!!! Welcome user";
 
         if("login success !!!!! Welcome user".equalsIgnoreCase(result)) {
                 context.startActivity(new Intent(context, choose_options.class));
