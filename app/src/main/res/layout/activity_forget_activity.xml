@@ -7,7 +7,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/back">
+        android:background="@drawable/backnew">
 
         <TextView
             android:text="RESET PASSWORD"
@@ -23,67 +23,50 @@
 
         <EditText
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="50dp"
             android:inputType="textPersonName"
+            android:background="@drawable/edittextstyle"
             android:ems="10"
-            android:layout_marginTop="29dp"
             android:id="@+id/reset_password"
-            android:layout_below="@+id/textView19"
-            android:layout_alignLeft="@+id/old_key"
-            android:layout_alignStart="@+id/old_key" />
-
-        <EditText
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:inputType="textPersonName"
-            android:ems="10"
-            android:layout_marginTop="41dp"
-            android:id="@+id/old_key"
-            android:textSize="18sp"
-            android:layout_below="@+id/textView10"
-            android:layout_alignLeft="@+id/textView16"
-            android:layout_alignStart="@+id/textView16" />
+            android:layout_marginBottom="60dp"
+            android:layout_above="@+id/old_key"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:hint="Enter your Key"
+            android:textAlignment="center" />
 
         <Button
             android:text="  Reset password  "
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="17dp"
+            android:background="@drawable/buttonback"
+            android:elevation="24dp"
+            android:layout_marginBottom="79dp"
             android:id="@+id/resetButton"
             android:textSize="18sp"
-            android:background="@android:color/holo_blue_dark"
             android:onClick="OnForget"
-            android:textColor="@color/common_google_signin_btn_text_dark_default" />
+            android:textColor="@color/common_google_signin_btn_text_dark_default"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
 
-        <TextView
-            android:text="Enter new password"
+        <EditText
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="56dp"
-            android:id="@+id/textView19"
-            android:textStyle="normal|bold"
-            android:textColor="@color/common_google_signin_btn_text_dark_focused"
-            android:textSize="24sp"
-            android:layout_below="@+id/old_key"
-            android:layout_alignLeft="@+id/textView10"
-            android:layout_alignStart="@+id/textView10" />
-
-        <TextView
-            android:text="Enter the key"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="56dp"
-            android:id="@+id/textView10"
-            android:textSize="24sp"
-            android:textStyle="normal|bold"
-            android:textColor="@color/common_google_signin_btn_text_dark_focused"
-            android:layout_marginLeft="31dp"
-            android:layout_marginStart="31dp"
-            android:layout_below="@+id/textView16"
+            android:layout_height="50dp"
+            android:background="@drawable/edittextstyle"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/old_key"
+            android:textSize="18sp"
+            android:layout_above="@+id/resetButton"
+            android:layout_marginBottom="77dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
             android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
+            android:layout_alignParentStart="true"
+            android:hint="Enter new password"
+            android:textAlignment="center" />
 
     </RelativeLayout>
 </LinearLayout>
