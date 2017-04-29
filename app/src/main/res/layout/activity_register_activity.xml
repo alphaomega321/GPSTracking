@@ -60,7 +60,6 @@
             android:ems="10"
             android:id="@+id/etPassword"
             android:hint="Minimum 8 characters"
-            android:singleLine="false"
             android:selectAllOnFocus="false"
             android:layout_alignBaseline="@+id/textView8"
             android:layout_alignBottom="@+id/textView8"
@@ -74,7 +73,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/btRegister"
-            android:background="@android:color/holo_blue_light"
+            android:background="#232323"
             android:layout_marginBottom="10dp"
             android:textColor="@color/common_google_signin_btn_text_dark_default"
             android:textAllCaps="false"
@@ -134,6 +133,7 @@
             android:layout_marginTop="31dp"
             android:layout_below="@+id/etPassword"
             android:layout_toLeftOf="@+id/etConfirm"
+            android:layout_toStartOf="@+id/etConfirm"
             android:layout_alignLeft="@+id/textView8"
             android:layout_alignStart="@+id/textView8" />
 

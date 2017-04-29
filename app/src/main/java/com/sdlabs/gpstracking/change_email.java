@@ -18,7 +18,7 @@ public class change_email extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_change_email);
-        getSupportActionBar().setTitle("Alpha Farmers");
+        getSupportActionBar().setTitle("Change your email");
 
         emailButton = (Button) findViewById(R.id.emailButton);
         old_email1 = (EditText) findViewById(R.id.old_email1);
