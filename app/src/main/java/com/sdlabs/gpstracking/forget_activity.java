@@ -16,7 +16,7 @@ public class forget_activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_forget_activity);
-        getSupportActionBar().setTitle("Alpha Farmers");
+        getSupportActionBar().setTitle("Forgot your password?");
 
         resetButton = (Button) findViewById(R.id.resetButton);
         old_key1 = (EditText) findViewById(R.id.old_key);

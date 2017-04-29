@@ -4,19 +4,15 @@ import android.Manifest;
 import android.app.Activity;
 import android.app.PendingIntent;
 import android.content.BroadcastReceiver;
-import android.content.ContentResolver;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.pm.PackageManager;
-import android.database.Cursor;
-import android.net.Uri;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.telephony.SmsManager;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -24,23 +20,18 @@ import android.widget.Toast;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
-import com.google.android.gms.maps.MapFragment;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MapStyleOptions;
 import com.google.android.gms.maps.model.MarkerOptions;
 
-import java.io.BufferedReader;
-import java.io.InputStreamReader;
-import java.util.ArrayList;
-
 public class login_success extends AppCompatActivity implements OnMapReadyCallback{
 
     EditText etMessage;
     EditText etTelNr;
     Button button;
-    int MY_PERMISSIONS_REUEST_SEND_SMS = 1;
+    int MY_PERMISSIONS_REQUEST_SEND_SMS = 1;
     String SENT = "SMS_SENT";
     String DELIVERED = "SMS_DELIVERED";
     PendingIntent sentPI, deliveredPI;
@@ -55,7 +46,7 @@ public class login_success extends AppCompatActivity implements OnMapReadyCallba
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login_success);
-        getSupportActionBar().setTitle("Alpha Farmers");
+        getSupportActionBar().setTitle("???");
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
@@ -65,17 +56,7 @@ public class login_success extends AppCompatActivity implements OnMapReadyCallba
         button = (Button)findViewById(R.id.button);
         sentPI = PendingIntent.getBroadcast(this, 0, new Intent(SENT), 0);
         deliveredPI = PendingIntent.getBroadcast(this, 0, new Intent(DELIVERED), 0);
-
-
-
-
     }
-
-
-
-
-
-
 
     @Override
     public void onMapReady(GoogleMap googleMap) {
@@ -83,7 +64,6 @@ public class login_success extends AppCompatActivity implements OnMapReadyCallba
 
         boolean success = googleMap.setMapStyle(new MapStyleOptions(getResources()
                 .getString(R.string.style_json)));
-
 
         double Latitude = 12.971;
         double Longitude = 79.163;
@@ -103,9 +83,6 @@ public class login_success extends AppCompatActivity implements OnMapReadyCallba
                     .title("Marker in Vellore"));
             googleMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
         }
-
-
-
     }
 
 
@@ -181,7 +158,7 @@ public class login_success extends AppCompatActivity implements OnMapReadyCallba
                 != PackageManager.PERMISSION_GRANTED)
         {
             ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.SEND_SMS},
-                    MY_PERMISSIONS_REUEST_SEND_SMS);
+                    MY_PERMISSIONS_REQUEST_SEND_SMS);
         }
 
         else

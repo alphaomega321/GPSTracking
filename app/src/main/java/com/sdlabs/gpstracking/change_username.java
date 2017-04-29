@@ -17,7 +17,7 @@ public class change_username extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_change_username);
-        getSupportActionBar().setTitle("Alpha Farmers");
+        getSupportActionBar().setTitle("Change your username");
 
         usernameButton = (Button) findViewById(R.id.usernameButton);
         old_username1 = (EditText) findViewById(R.id.old_username);

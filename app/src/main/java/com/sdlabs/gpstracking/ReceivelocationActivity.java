@@ -19,10 +19,6 @@ import com.google.android.gms.maps.MapView;
 
 import static com.sdlabs.gpstracking.R.id.map;
 
-/**
- * Created by saransh on 23-04-2017.
- */
-
 public class ReceivelocationActivity extends BroadcastReceiver {
     private String TAG = ReceivelocationActivity.class.getSimpleName();
     final SmsManager sms = SmsManager.getDefault();
@@ -71,22 +67,8 @@ public class ReceivelocationActivity extends BroadcastReceiver {
         Intent intent2 = new Intent(context, login_success.class);
         intent2.putExtra("sms", message);
         context.startActivity(intent2);
-
-
-
-
-
-
-
-      /* Part as suggested by you to pass a string to friendlocation.class  */
-
-
-
-
     }
-
-
-    }
+}
 
 
 

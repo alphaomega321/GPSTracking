@@ -27,7 +27,7 @@
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:id="@+id/button"
-        android:background="@drawable/ticknew"
+        android:background="@drawable/ic_send_black_24px"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
@@ -40,7 +40,7 @@
         android:layout_toRightOf="@+id/textView4"
         android:layout_toEndOf="@+id/textView4"
         android:layout_marginTop="150dp"
-        android:id="@+id/map" />
+        android:id="@+id/map1" />
 
     <fragment
         xmlns:android="http://schemas.android.com/apk/res/android"
@@ -65,7 +65,7 @@
         android:inputType="textPersonName"
         android:ems="10"
         android:id="@+id/etTelNr"
-        android:hint="ex  : + 91 _ _ _ _ _ _ _ _ _ _"
+        android:hint="Eg  : +919876543210"
         android:layout_alignParentTop="true"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true" />

@@ -17,7 +17,7 @@ public class change_password extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_change_password);
-        getSupportActionBar().setTitle("Alpha Farmers");
+        getSupportActionBar().setTitle("Change your password");
 
         passwordButton = (Button) findViewById(R.id.passwordButton);
         old_password1 = (EditText) findViewById(R.id.old_password);

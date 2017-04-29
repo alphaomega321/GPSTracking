@@ -19,23 +19,17 @@ import static com.sdlabs.gpstracking.R.layout.activity_register_activity;
 
 public class MainActivity extends AppCompatActivity {
 
-
     Button blogin;
     EditText etusername, etpassword;
     TextView tvForget, tvRegister,attempts;
     TextView counter;
     int phyC = 5;
 
-
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        getSupportActionBar().setTitle("Alpha Farmers");
-
-
+        getSupportActionBar().setTitle("Sign In");
         etusername = (EditText) findViewById(R.id.etusername);
         etpassword = (EditText) findViewById(R.id.etpassword);
         blogin = (Button) findViewById(R.id.login);
@@ -62,26 +56,22 @@ public class MainActivity extends AppCompatActivity {
         });
 
         System.out.print("Hello World!");
-
-
-
-
-
-
     }
 
     public void OnLogin(View view)
     {
         String user_name = etusername.getText().toString();
         String user_password = etpassword.getText().toString();
+        TextView attempts = (TextView) findViewById(R.id.attempts);
+        attempts.setVisibility(View.VISIBLE);
         String type = "login";
         phyC--;
         counter.setText(Integer.toString(phyC));
 
         if(phyC != 0)
         {
-            BackgroundWorker backgourndWorker = new BackgroundWorker(this);
-            backgourndWorker.execute(type, user_name, user_password);
+            BackgroundWorker backgroundWorker = new BackgroundWorker(this);
+            backgroundWorker.execute(type, user_name, user_password);
 
         }
 
@@ -92,11 +82,5 @@ public class MainActivity extends AppCompatActivity {
             startActivity(newIntent);
 
         }
-
-
-
     }
-
-
-
 }

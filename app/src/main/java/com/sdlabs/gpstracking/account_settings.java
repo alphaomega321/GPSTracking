@@ -18,7 +18,7 @@ public class account_settings extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_account_settings);
-        getSupportActionBar().setTitle("Alpha Farmers");
+        getSupportActionBar().setTitle("Account Settings");
 
         changeU = (TextView) findViewById(R.id.changeU);
         changeP = (TextView) findViewById(R.id.changeP);
