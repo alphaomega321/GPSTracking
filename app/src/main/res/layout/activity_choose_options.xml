@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/back">
+
+    <Button
+        android:text="Account settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:id="@+id/account"
+        android:layout_below="@+id/welcome"
+        android:layout_alignLeft="@+id/vehicle"
+        android:layout_alignStart="@+id/vehicle"
+        android:layout_alignRight="@+id/vehicle"
+        android:layout_alignEnd="@+id/vehicle"
+        android:textSize="14sp"
+        android:background="#06a6d3"
+        android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+    <TextView
+        android:text="Log Out"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/vehicle"
+        android:layout_marginTop="20dp"
+        android:id="@+id/logout"
+        android:textSize="18sp"
+        android:textStyle="normal|bold"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused" />
+
+    <Button
+        android:text="  Register another vehicle   "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/vehicle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="58dp"
+        android:id="@+id/registernew"
+        android:background="#06a6d3"
+        android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+    <Button
+        android:text="Get Vehicle location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:id="@+id/vehicle"
+        android:layout_below="@+id/account"
+        android:layout_alignLeft="@+id/registernew"
+        android:layout_alignStart="@+id/registernew"
+        android:layout_alignRight="@+id/registernew"
+        android:layout_alignEnd="@+id/registernew"
+        android:background="#06a6d3"
+        android:textColor="@color/common_google_signin_btn_text_dark_default" />
+
+    <TextView
+        android:text="Welcome user..."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="43dp"
+        android:id="@+id/welcome"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        android:textSize="24sp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:textStyle="normal|bold"
+        android:layout_below="@+id/logout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>
