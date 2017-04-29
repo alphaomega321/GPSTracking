@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_add_plot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.sdlabs.gpstracking.addPlot"
+    android:background="@drawable/backnew">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@drawable/edittextstyle"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_below="@+id/plotName"
+        android:layout_marginTop="29dp"
+        android:id="@+id/plotLatitude"
+        android:hint="Latitude"
+        android:textAlignment="center"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:text="    Get location from GPS    "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonback"
+        android:elevation="24dp"
+        android:layout_marginTop="47dp"
+        android:id="@+id/buttonLocation"
+        android:layout_below="@+id/plotLongitude"
+        android:layout_centerHorizontal="true"
+        android:onClick="getLocation"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@drawable/edittextstyle"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_marginTop="32dp"
+        android:id="@+id/plotName"
+        android:hint="Name"
+        android:textAlignment="center"
+        android:layout_below="@+id/plotId"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@drawable/edittextstyle"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/plotId"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="18dp"
+        android:hint="Plot Id"
+        android:textAlignment="center"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@drawable/edittextstyle"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/plotLongitude"
+        android:hint="Longitude"
+        android:textAlignment="center"
+        android:layout_marginTop="29dp"
+        android:layout_below="@+id/plotLatitude"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="Add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttonback"
+        android:elevation="24dp"
+        android:id="@+id/buttonAdd"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/buttonLocation"
+        android:layout_alignStart="@+id/buttonLocation"
+        android:layout_alignRight="@+id/buttonLocation"
+        android:layout_alignEnd="@+id/buttonLocation"
+        android:onClick="Add"/>
+
+</RelativeLayout>

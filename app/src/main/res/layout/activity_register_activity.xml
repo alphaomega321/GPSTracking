@@ -44,7 +44,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/btRegister"
-            android:background="@android:color/holo_blue_light"
+            android:background="@drawable/buttonback"
+            android:elevation="24dp"
             android:layout_marginBottom="10dp"
             android:textColor="@color/common_google_signin_btn_text_dark_default"
             android:textAllCaps="false"
@@ -66,7 +67,9 @@
             android:layout_marginStart="18dp"
             android:layout_alignBottom="@+id/textView9"
             android:layout_alignLeft="@+id/btRegister"
-            android:layout_alignStart="@+id/btRegister" />
+            android:layout_alignStart="@+id/btRegister"
+            android:hint="ex: +91__________"
+            android:textAlignment="center" />
 
         <TextView
             android:text="Full Name"
@@ -82,7 +85,7 @@
             android:layout_alignStart="@+id/textView7" />
 
         <TextView
-            android:text="Confirm Password"
+            android:text="Mobile number"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/textView9"

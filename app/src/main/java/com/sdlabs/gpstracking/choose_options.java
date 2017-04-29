@@ -61,7 +61,7 @@ public class choose_options extends AppCompatActivity {
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent registerIntent = new Intent(choose_options.this, register_activity.class);
+                Intent registerIntent = new Intent(choose_options.this, plotconfig.class);
                 startActivity(registerIntent);
 
             }
