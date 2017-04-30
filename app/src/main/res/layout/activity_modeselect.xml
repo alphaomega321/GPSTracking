@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backnew"
+    tools:context="com.sdlabs.gpstracking.modeselect">
+
+    <Button
+        android:id="@+id/manual"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/buttonback"
+        android:elevation="24dp"
+        android:text="MANUAL"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:layout_below="@+id/textView"
+        android:layout_alignLeft="@+id/auto"
+        android:layout_alignStart="@+id/auto" />
+
+    <Button
+        android:id="@+id/auto"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/buttonback"
+        android:elevation="24dp"
+        android:text="AUTO"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:layout_below="@+id/manual"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose your mode"
+        android:textAlignment="center"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textSize="24sp"
+        android:layout_marginTop="55dp"
+        android:layout_below="@+id/condDescr"
+        android:layout_alignRight="@+id/manual"
+        android:layout_alignEnd="@+id/manual" />
+
+    <TextView
+        android:id="@+id/cityText"
+        style="?android:attr/textAppearanceMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/condIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/cityText" />
+
+    <TextView
+        android:id="@+id/condDescr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/condIcon"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/temp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/condDescr"
+        android:layout_marginLeft="12dp"
+        android:layout_toRightOf="@id/condDescr" />
+
+    <TextView
+        android:id="@+id/pressLab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="68dp"
+        android:text="Pressure"
+        android:textSize="18sp"
+        android:layout_below="@+id/auto"
+        android:layout_alignLeft="@+id/humLab"
+        android:layout_alignStart="@+id/humLab" />
+
+    <TextView
+        android:id="@+id/press"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="21dp"
+        android:layout_marginEnd="21dp"
+        android:layout_alignTop="@+id/pressLab"
+        android:layout_alignRight="@+id/auto"
+        android:layout_alignEnd="@+id/auto" />
+
+    <TextView
+        android:id="@+id/humLab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pressLab"
+        android:layout_marginTop="21dp"
+        android:layout_toLeftOf="@+id/auto"
+        android:layout_toStartOf="@+id/auto"
+        android:text="Humidity"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/hum"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/humLab"
+        android:layout_alignLeft="@+id/press"
+        android:layout_alignStart="@+id/press" />
+
+    <TextView
+        android:id="@+id/windLab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wind"
+        android:textAlignment="viewStart"
+        android:textSize="18sp"
+        android:layout_marginBottom="22dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/humLab"
+        android:layout_alignStart="@+id/humLab"
+        android:layout_alignRight="@+id/humLab"
+        android:layout_alignEnd="@+id/humLab" />
+
+    <TextView
+        android:id="@+id/windSpeed"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/windLab"
+        android:layout_alignLeft="@+id/hum"
+        android:layout_alignStart="@+id/hum" />
+
+    <TextView
+        android:id="@+id/windDeg"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/windSpeed"
+        android:layout_alignBottom="@+id/windSpeed"
+        android:layout_toRightOf="@+id/windSpeed"
+        android:layout_toEndOf="@+id/windSpeed" />
+</RelativeLayout>

@@ -40,14 +40,14 @@ public class addPlot extends AppCompatActivity {
         setContentView(R.layout.activity_add_plot);
 
         plotId = (EditText) findViewById(R.id.plotId);
-        plotName = (EditText) findViewById(R.id.plotName);
+
         plotLatitude = (EditText) findViewById(R.id.plotLatitude);
         plotLongitude = (EditText) findViewById(R.id.plotLongitude);
         buttonAdd = (Button) findViewById(R.id.buttonLocation);
         buttonLocation = (Button) findViewById(R.id.buttonLocation);
 
         plotID = plotId.getText().toString();
-        plotNAME = plotName.getText().toString();
+
         plotLATITUDE = plotLatitude.getText().toString();
         plotLONGITUDE = plotLongitude.getText().toString();
 

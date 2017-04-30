@@ -12,8 +12,8 @@
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.BROADCAST_SMS" />
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -54,6 +54,10 @@
         </activity>
         <activity android:name=".plotconfig" />
         <activity android:name=".addPlot" />
+        <activity android:name=".Main2Activity" />
+        <activity android:name=".Manual" />
+        <activity android:name=".Automatic" />
+        <activity android:name=".modeselect"></activity>
     </application>
 
 </manifest>

@@ -42,5 +42,9 @@ android {
 
     }
 }
+dependencies {
+    compile 'com.android.support.constraint:constraint-layout:+'
+}
+
 
 

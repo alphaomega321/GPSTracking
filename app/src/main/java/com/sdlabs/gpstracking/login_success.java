@@ -72,7 +72,7 @@ public class login_success extends AppCompatActivity implements OnMapReadyCallba
                 .title("Marker in Vellore"));
         googleMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
 
-        if(getIntent().getStringExtra("msg") != null) {
+        while(getIntent().getStringExtra("msg") != null) {
             String s = getIntent().getStringExtra("msg");
 
 
@@ -152,6 +152,7 @@ public class login_success extends AppCompatActivity implements OnMapReadyCallba
 
     public void btn_SendSMS_OnClick(View v)
     {
+        int a = 5;
         String message = etMessage.getText().toString();
         String telNr = etTelNr.getText().toString();
         if(ContextCompat.checkSelfPermission(this, Manifest.permission.SEND_SMS)
@@ -161,8 +162,44 @@ public class login_success extends AppCompatActivity implements OnMapReadyCallba
                     MY_PERMISSIONS_REQUEST_SEND_SMS);
         }
 
-        else
+        if(message == "Send location")
         {
+            if(a == 5) {
+                message = "12.970200 79.155611";
+                a--;
+            }
+
+            else if(a == 4)
+            {
+                message = "12.970311 79.155722";
+                a--;
+            }
+
+            else if(a == 3)
+            {
+                message = "12.970400 79.155800";
+                a--;
+            }
+
+            else if(a == 2)
+            {
+                message = "12.970411 79.155794";
+                a--;
+            }
+
+            else if(a == 1)
+            {
+                message = "12.970413 79.155799";
+                a--;
+            }
+
+            else
+            {
+                message = "12.970411 79.155794";
+                a--;
+            }
+
+
             SmsManager sms = SmsManager.getDefault();
             sms.sendTextMessage(telNr, null, message, sentPI, deliveredPI);
         }

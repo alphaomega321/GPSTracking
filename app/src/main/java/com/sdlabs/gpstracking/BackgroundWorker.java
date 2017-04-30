@@ -49,14 +49,14 @@ public class BackgroundWorker extends AsyncTask<String, Void, String> {
         }
         return Integer.toString(a);
     }
-        /*String login_url = "http://172.17.31.146/login.php";
+        String login_url = "http://172.17.31.146/login.php";
         String register_url = "http://172.17.31.146/register.php";
         String email_url = "http://172.17.31.146/changeEmail.php";
         String password_url = "http://172.17.31.146/changePassword.php";
         String username_url = "http://172.17.31.146/changeUsername.php";
         String recover_url = "http://172.17.31.146/recoverPassword.php";
 
-        if(type.equals("login"))
+        /*if(type.equals("login"))
         {
             try {
                 String user_name = params[1];
