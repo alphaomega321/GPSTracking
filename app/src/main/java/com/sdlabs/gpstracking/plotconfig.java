@@ -34,11 +34,36 @@ public class plotconfig extends AppCompatActivity {
         addPlot.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent registerIntent = new Intent(plotconfig.this, addPlot.class);
+                Intent registerIntent = new Intent(plotconfig.this, modeselect.class);
                 startActivity(registerIntent);
 
             }
         });
+
+        plot1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent xyz = new Intent(plotconfig.this, modeselect.class);
+                startActivity(xyz);
+            }
+        });
+
+        plot2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent abc = new Intent(plotconfig.this, modeselect.class);
+                startActivity(abc);
+            }
+        });
+
+        plot3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent pqr = new Intent(plotconfig.this,modeselect.class);
+                startActivity(pqr);
+            }
+        });
+
 
 
 
